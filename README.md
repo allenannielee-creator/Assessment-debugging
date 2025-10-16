@@ -1,15 +1,27 @@
-## Programmer Assessment Q4
+# Setup & Run Instructions
+## 1. Install Python
+Type these commands to install the correct version of Python and pip
+```
+sudo apt update
+sudo apt install python3
+sudo apt install python3-pip
+```
+## 2. Create and Activate a Virtual Environment
+Type these commands into the command line to create a virtual environment to isolate the dependencies.
 
-This repository contains a broken web app built with Dash. Please follow the tasks below.
-
-Tasks:
-1. Clone this repo to your machine.
-2. Fix missing dependencies and fill authors section in `pyproject.toml`.
-3. Fix bugs prevent the app `main.py` from running.
-4. Change port the app ruuning on to `10030`.
-5. Commit you changes.
-6. Update `README.md` with a instruction
-   1. Assuming the user has a fresh minimum Linux installation with no python.
-   2. Setup python and virtual environment for this app, remember to use the fixed `pyproject.toml`.
-   3. How to run this app and how to access it without portforwarding.
-7. Push all the changes to your own repository on Github, and provide a link to your own repo in your submission in the last.
+```
+python3 -m venv venv
+source venv/bin/activate
+```
+## 3. Install Dependencies
+Type this comand into the command line to install the required packages.
+```
+pip install -e .
+```
+## 4. Run the Application
+Run the application by typing this command into the terminal
+```
+python main.py
+```
+## 5. Access the Application
+The application will be running on http://127.0.0.1:10030. Simply copy and paste the URL into your browser
