@@ -6,4 +6,9 @@ authors = [{ name = "", email = "" }]
 readme = "README.md"
 requires-python = "<=3.11"
 dependencies = [
+    "dash",
+    "numpy",
+    "pandas",
+    "datetime",
+    "pathlib"
 ]
